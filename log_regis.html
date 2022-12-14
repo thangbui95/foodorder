@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./log_regis.css">
+</head>
+<body>
+    <div class="cover">
+
+        <div class="logincontent">
+
+            <div class="login">
+                <input id="nickname" placeholder="Email address or phone number"/>
+                <input id="password" placeholder="Password"/>
+                <button onclick="log_in()">Log in</button>
+                <a href="#">Forgotten Password?</a>
+            </div>
+            <div class="newaccount">
+                <a onclick="toRegister()"">Create New Account</a>
+            </div>
+            
+        </div>
+
+        <div class="registercontent">
+
+            <header>
+
+                <h1>Register</h1>
+                <p>It's quick and easy</p>
+
+            </header>
+
+            <div class="register" id="register">
+                
+                <div class="inputcover w50">
+                    <input class="w100" id="fn" placeholder="Firstname">
+                </div>
+
+                <div class="inputcover w50">
+                    <input class="w100" id="sn" placeholder="Surname">
+                </div>
+
+                <div class="inputcover w100">
+                    <input class="w100" id="pn" placeholder="Mobile number or email address">
+                </div>
+
+                <div class="inputcover w100">
+                    <input class="w100" id="pw" placeholder="New password">
+                </div>
+
+                <div class="inputcover w100">
+                    <input class="w100" id="db" placeholder="Date of Birth">
+                </div>
+                
+                <div class="inputcover w100">
+                    <select name="" id="gender" class="w100">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Custom">Custom</option>
+                    </select>
+                </div>
+                
+                <div class="inputcover w100">
+                    <button onclick="register()">
+                        Register
+                    </button>
+                </div>
+
+                <div class="backlogin w100">
+                    <a href="" onclick="backTologin()">Want to login?</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./log_regis.js"></script>
+</body>
+</html>
